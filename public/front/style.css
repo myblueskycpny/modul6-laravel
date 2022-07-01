@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  height: 50px;
+  margin: 2px;
+  font-size: 1.2em;
+  border-style: none;
+  /*background-color: #d6e0f5;*/
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: #2952a3;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.calculator {
+  position: relative;
+  top: 150px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.calcButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  background-color: #193366;
+  padding: 10px;
+}
+
+.calcButtons > button:nth-child(17) {
+  grid-column: 1/3;
+}
+
+.operator {
+  background-color: #d6e0f5;
+}
+
+.number {
+  background-color: #7094db;
+}
+
+.userInput {
+  position: relative;
+  height: 80px;
+  max-width: 100%;
+  text-align: right;
+  padding: 10px;
+  font-size: 25px;
+  /*border: 1px solid #193366;*/
+  background-color: #d6e0f5;
+}
+
+.calcButtons > button:nth-child(19) {
+  background-color: lightgreen;
+}
+
+.userEntry {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 5px;
+  right: 0;
+}
+
+.finalCalc {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  top: 0;
+  padding: 0;
+}
+nav {
+  background-color: rgb(217, 155, 62);
+  height: 50px;
+  width: 100%;
+}
+header {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.headerline {
+  height: 3px;
+  background-color: red;
+}
+.profile {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 330px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.headnews1 {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 500px;
+}
+.headnews1 a:hover {
+  background: white;
+}
+.headnews2 a:hover {
+  background: white;
+}
+.headnews3 a:hover {
+  background: white;
+}
+.headnews4 a:hover {
+  background: white;
+}
+.headnews5 a:hover {
+  background: white;
+}
+.bodyberita {
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 700px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.bodyberita2 {
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 900px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.bodyberita3 {
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 950px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.bodyberita4 {
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 800px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.bodyberita5 {
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 900px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.headnews2 {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 500px;
+}
+.headnews3 {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: -50px;
+  margin-right: -95px;
+}
+.headnews4 {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: -50px;
+  margin-right: -180px;
+}
+.headnews5 {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: -50px;
+  margin-right: -196px;
+}
+label.logo {
+  color: black;
+  font: 35px;
+  line-height: 50px;
+  padding: 0 100px;
+
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 100px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-size: 17px;
+}
+a.active,
+a:hover,
+.dropbtn:hover {
+  background: rgb(238, 183, 74);
+  transition: 0.5s;
+}
+#btnactive {
+  background: rgb(238, 183, 74);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  height: 40px;
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.drop:hover .dropdown-content {
+  display: block;
+}
+aside.widgets {
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-left: -0px;
+  padding-right: 70px;
+  padding-bottom: 1px;
+  margin-right: -50px;
+}
+
+aside.widgets ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside.widgets li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 100px;
+}
+aside.widgets,
+aside.widgets ul {
+  background: rgb(215, 179, 35);
+}
+aside.widgets li a {
+  padding: 5px 10px;
+}
+
+#site-sidebar {
+  float: right;
+
+  padding-right: 250px;
+}
+.pagination {
+  float: right;
+  margin-top: 20px;
+  margin-left: 1000px;
+  margin-right: 180px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: rgb(203, 149, 62);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.h1mwl {
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #2b00ff;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: rgb(121, 176, 215);
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(54, 63, 232);
+  color: white;
+}
+#movie-form {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#movierate {
+  margin-top: 10px;
+}
+.btn-submit {
+  margin-top: 20px;
+  padding: 5px;
+}
+.delete {
+  padding: 5px;
+}
+.delete:hover {
+  background-color: red;
+}
